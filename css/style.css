@@ -1,4 +1,3 @@
-
 :root {
     /* ?===================== Custom Color ======================== */
     --rich-black-fogra-29: hsl(210, 26%, 7%);
@@ -22,6 +21,117 @@
     --onyx: hsl(0, 0%, 27%);
 
 
-     /* ?===================== Typograpphy ======================== */
+    /* ?===================== Typograpphy/Fonts ======================== */
+    --ff-shadows-into-light: 'Shadows Into Light', cursive;
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-rubik: 'Rubik', sans-serif;
 
+    --fs-1: 3.2rem;
+    --fs-2: 2.2rem;
+    --fs-3: 1.8rem;
+    --fs-4: 1.4rem;
+    --fs-5: 1.2rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* ?===================== Spacing ======================== */
+    --section-padding: 60px;
+
+    /* ?===================== Shadow ======================== */
+    --shadow-1: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+    --shadow-2: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+
+    /* ?===================== Transition ====================== */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+
+    /* ?===================== Clip path ====================== */
+    --clip-path-1: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
+    --clip-path-2: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+
+}
+
+/* *===================== Reset Css ====================== */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a,
+img,
+span,input,select,button,textarea,ion-icon{
+    display: block;
+
+}
+img{
+    height: auto;
+}
+input,select,textarea,button{
+    background: none;
+    border: none;
+    font: inherit;
+}
+input,select,textarea{
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+ion-icon{
+    pointer-events: none;
+}
+address{
+    font-style: normal;
+
+}
+
+html{
+    font-family: var(--ff-roboto);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--white);
+    color: var(--sonic-silver);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow: hidden;
+    /* height: 300vh; */
+}
+body.active{
+    overflow: hidden;
+}
+:focus-visible{
+    outline-offset: 4px;
+}
+::selection{
+    background-color: var(--deep-saffron);
+    color: var(--white);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--cultured);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--deep-saffron);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--tangerine);
 }
